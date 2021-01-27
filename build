@@ -1,0 +1,7 @@
+#!/bin/sh
+
+configs="./configs"
+cat $configs/startup \
+    $configs/shortcuts \
+    $configs/workspaces \
+    $configs/wm > ./config
