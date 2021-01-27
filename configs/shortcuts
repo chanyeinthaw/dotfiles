@@ -22,6 +22,8 @@ bindsym $mod+Return exec gnome-terminal
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
+bindsym $mod+Ctrl+q exec loginctl lock-session
+
 # section window
 # kill focused window
 bindsym $mod+q kill
@@ -61,6 +63,10 @@ bindsym $mod+p focus parent
 
 # focus the child container
 bindsym $mod+c focus child
+
+#Power option
+bindsym $mod+Mod1+control+XF86PowerOff exec shutdown now
+bindsym $mod+Mod1+control+Delete exec i3exit logout
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
