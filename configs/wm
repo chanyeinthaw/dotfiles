@@ -15,4 +15,4 @@ bar {
 gaps inner 12
 smart_gaps on
 
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 4
