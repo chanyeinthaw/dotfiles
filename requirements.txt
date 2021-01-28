@@ -1,0 +1,11 @@
+i3-gaps
+ibhagwan picom
+py3status
+feh
+xss-lock
+i3lock
+nm-applet
+pactl
+brightnessctl
+i3exit
+dmenu_run
