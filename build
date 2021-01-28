@@ -4,4 +4,5 @@ configs="./configs"
 cat $configs/startup \
     $configs/shortcuts \
     $configs/workspaces \
+    $configs/bar \
     $configs/wm > ./config
