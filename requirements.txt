@@ -9,3 +9,9 @@ pactl
 brightnessctl
 i3exit
 dmenu_run
+lxappearance
+xev
+xprop
+xdotool
+xinput
+setxkbmap
