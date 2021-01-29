@@ -11,10 +11,10 @@ bar {
             separator #4b5262
 
             # colour of border, background, and text
-            focused_workspace       #2f343f #88c0d0 #2f343f
-            active_workspace        #2f343f #2f343f #d8dee8
-            inactive_workspace      #2f343f #2f343f #d8dee8
-            urgent_workspace       #2f343f #ebcb8b #2f343f
+            active_workspace       #000000 #000000 #ffffff
+            inactive_workspace     #000000 #000000 #ffffff
+            focused_workspace      #2f343f #2f343f #d8dee8
+            urgent_workspace       #000000 #ebcb8b #2f343f
         }
 
         status_command py3status -c ~/.config/i3/i3status.conf
