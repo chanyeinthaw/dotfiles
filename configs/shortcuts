@@ -12,7 +12,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl s 5%- && $refre
 floating_modifier $mod
 
 # Terminal
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec kitty --config ~/.config/i3/kitty.conf
  
 # start dmenu (a program launcher)
 # bindsym $mod+d exec --no-startup-id dmenu_run
