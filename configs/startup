@@ -2,7 +2,7 @@ set $mod Mod4
 font pango:monospace 8
 
 #Polybar
-exec --no-startup-id polybar -c ~/.config/i3/polybar.conf status
+# exec --no-startup-id polybar -c ~/.config/i3/polybar.conf status
 
 # Compositor
 exec --no-startup-id picom --config ~/.config/i3/picom.conf
