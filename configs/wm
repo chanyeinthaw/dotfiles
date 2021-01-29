@@ -6,6 +6,6 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 
 gaps inner 12
-# smart_gaps on
+smart_gaps on
 
 for_window [class="^.*"] border pixel 0
