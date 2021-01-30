@@ -1,6 +1,9 @@
 set $mod Mod4
 font pango:monospace 8
 
+#lock on startup
+exec --no-startup-id ~/.config/i3/scripts/lock.sh
+
 #Polybar
 exec --no-startup-id polybar -c ~/.config/i3/polybar/polybar.conf status
 
