@@ -5,5 +5,10 @@ name=$(xdotool getactivewindow getwindowname 2>1)
 if [ "$name" = "" ]; then
     echo $PINCH
 else
-    echo $name
+    len=${#name}
+    if [ $len -gt 60 ]; then
+        echo $(echo $name | cut -c1-60)...
+    else
+        echo $name
+    fi
 fi
