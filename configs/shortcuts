@@ -65,6 +65,7 @@ bindsym $mod+p focus parent
 bindsym $mod+c focus child
 
 #Power option
+bindsym XF86PowerOff exec systemctl suspend
 bindsym $mod+Mod1+control+XF86PowerOff exec shutdown now
 bindsym $mod+Mod1+control+Delete exec i3exit logout
 

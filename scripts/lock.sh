@@ -9,7 +9,7 @@ i3lock \
 --pass-screen-keys \
 --pass-power-keys \
 --insidevercolor=00000000 \
---insidewrongcolor=F4433650 \
+--insidewrongcolor=00000000 \
 --insidecolor=00000000 \
 --ringcolor=90A4AEff \
 --ringvercolor=263238FF \
@@ -25,5 +25,5 @@ i3lock \
 --greetercolor=ffffffff \
 --greetertext=$PINCH \
 --veriftext=... \
---wrongtext=Nope \
+--wrongtext=T_T \
 --radius=100
