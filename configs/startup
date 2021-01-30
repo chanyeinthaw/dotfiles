@@ -2,7 +2,7 @@ set $mod Mod4
 font pango:monospace 8
 
 #Polybar
-# exec --no-startup-id polybar -c ~/.config/i3/polybar.conf status
+exec_always --no-startup-id polybar -c ~/.config/i3/polybar/polybar.conf status
 
 # Compositor
 exec --no-startup-id picom --config ~/.config/i3/picom.conf
@@ -11,7 +11,7 @@ exec --no-startup-id picom --config ~/.config/i3/picom.conf
 exec_always --no-startup-id feh --bg-scale ~/.config/i3/background.png
 
 # Setup scripts
-exec --no-startup-id /home/chan/.config/i3/setup.sh &
+exec --no-startup-id /home/chan/.config/i3/scripts/setup.sh &
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
