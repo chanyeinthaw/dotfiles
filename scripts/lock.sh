@@ -4,6 +4,7 @@ i3lock \
 --nofork \
 --image=/home/$USER/.config/i3/background.png \
 --clock \
+--timestr="%I:%M:%S" \
 --indicator \
 --pass-media-keys \
 --pass-screen-keys \
