@@ -3,7 +3,7 @@
 name=$(xdotool getactivewindow getwindowname 2>1)
 
 if [ "$name" = "" ]; then
-    echo Pinch
+    echo $PINCH
 else
     echo $name
 fi

@@ -23,7 +23,7 @@ i3lock \
 --timecolor=ffffffff \
 --datecolor=ffffffff \
 --greetercolor=ffffffff \
---greetertext=Pinch \
+--greetertext=$PINCH \
 --veriftext=... \
 --wrongtext=Nope \
 --radius=100
