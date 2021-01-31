@@ -15,3 +15,5 @@ xprop
 xdotool
 xinput
 setxkbmap
+https://github.com/adi1090x/rofi
+rofi

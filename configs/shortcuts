@@ -20,7 +20,7 @@ bindsym $mod+Return exec kitty --config ~/.config/i3/kitty.conf
 # bindcode $mod+40 exec rofi -modi drun,run -show drun
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
-bindsym $mod+space exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+space exec --no-startup-id ~/.config/rofi/bin/launcher_misc
 
 bindsym $mod+Ctrl+q exec loginctl lock-session
 
