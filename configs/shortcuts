@@ -20,7 +20,7 @@ bindsym $mod+Return exec kitty --config ~/.config/i3/kitty.conf
 # bindcode $mod+40 exec rofi -modi drun,run -show drun
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+space exec --no-startup-id i3-dmenu-desktop
 
 bindsym $mod+Ctrl+q exec loginctl lock-session
 
@@ -56,7 +56,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+# bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+p focus parent
@@ -70,7 +70,7 @@ bindsym $mod+Mod1+control+XF86PowerOff exec shutdown now
 bindsym $mod+Mod1+control+Delete exec i3exit logout
 
 # resize window (you can also use the mouse for that)
-mode "resize" {
+mode "Resize" {
         # These bindings trigger as soon as you enter the resize mode
 
         # Pressing left will shrink the window’s width.
@@ -94,4 +94,4 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
-bindsym $mod+r mode "resize"
+bindsym $mod+r mode "Resize"
