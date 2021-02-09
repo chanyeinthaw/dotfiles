@@ -17,3 +17,4 @@ xinput
 setxkbmap
 https://github.com/adi1090x/rofi
 rofi
+https://github.com/morpheusthewhite/spicetify-themes/tree/master/Dribbblish

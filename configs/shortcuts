@@ -49,7 +49,7 @@ bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 # bindsym $mod+s layout stacking
-# bindsym $mod+w layout tabbed
+bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
@@ -64,8 +64,11 @@ bindsym $mod+p focus parent
 # focus the child container
 bindsym $mod+c focus child
 
+bindsym Print exec ~/.config/rofi/bin/android_screenshot
+bindsym $mod+Print exec scrot 'Screenshot_%Y-%m-%d_$wx$h.png' -e 'mv $f ~/Pictures'
+
 #Power option
-bindsym XF86PowerOff exec systemctl suspend
+bindsym XF86PowerOff exec ~/.config/rofi/bin/android_powermenu
 bindsym $mod+Mod1+control+XF86PowerOff exec shutdown now
 bindsym $mod+Mod1+control+Delete exec i3exit logout
 
