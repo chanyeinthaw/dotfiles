@@ -35,7 +35,7 @@ Font တွေ Gnome နဲ့ဆိုင်တဲ့ Theme တွေ Icon Them
 
 Caps ကို Escape နဲ့ပြောင်း Map တာ၊ Win နဲ့ Alt နေရာလဲတာရယ် Input Method ပြောင်းတာရယ်အတွက် `xkbmap`, `xinput`
 
-### ဘယ်လိုသုံးမလဲ
+### ဘာတွေလုပ်ဖို့လိုလဲ
 
 1. ဒီ repository ကို `~/.config/i3` ထဲကို clone ပါ
 
