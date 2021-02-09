@@ -6,7 +6,7 @@ OS - Manjaro Arch
 
 Window Manager - i3-gaps
 
-Compositor - [ibhagwan](https://github.com/ibhagwan/picom)
+Compositor - [ibhagwan](https://github.com/ibhagwan/picom) anti-aliased rounded corner ရယ် background blur ရယ်ရလို့သုံးတာပါ picom official repo သုံးလည်းရတယ်
 
 Bar - polybar
 
