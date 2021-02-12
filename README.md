@@ -49,6 +49,12 @@ Caps ကို တစ်ခုတည်းဆို Escape၊ ပေါင်း
 
 Rofi applet တွေအတွက်ရယ် Spotify Theme ရယ်ကတော့ သူတို့ Repo တွေကပြောတဲ့အတိုင်းလုပ်ရင်ရတယ်။ 
 
+### Tracker CPU Spike
+
+tracker-extract-3 ဆိုတဲ့ process နဲ့ CPU spike တွေရှိလာရင် ဒီကအတိုင်း ပိတ်လို့ရတယ် 
+
+[Gnome Tracker Disable](https://gist.github.com/chanyeinthaw/e740a81569f9c7123b54b23966112838)
+
 ### မသုံးတတ်ဘူးလား
 
 Shortcuts တွေသိချင်ရင် `configs/shortcuts`, `config/workspaces` ထဲကြည့်ပါ ဒါမှမဟုတ် `mod+period` ကိုနှိပ်ကြည့်ပါ
