@@ -35,7 +35,7 @@ Font တွေ Gnome နဲ့ဆိုင်တဲ့ Theme တွေ Icon Them
 
 `xev`, `xprop` နှင့် `xdotool` တွေကို keycode ရှာဖို့နဲ့ window တစ်ခုရဲ့ information ယူဖို့သုံးထားတယ်
 
-Caps ကို Escape နဲ့ပြောင်း Map တာ၊ Win နဲ့ Alt နေရာလဲတာရယ် Input Method ပြောင်းတာရယ်အတွက် `xkbmap`, `xinput`
+Caps ကို တစ်ခုတည်းဆို Escape၊ ပေါင်းနှိပ်ရင် Ctrl နဲ့ Map တာ၊ Win နဲ့ Alt နေရာလဲတာရယ် Input Method ပြောင်းတာရယ်အတွက် `setxkbmap`, `xcape`
 
 ### ဘာတွေလုပ်ဖို့လိုလဲ
 

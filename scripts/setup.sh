@@ -14,4 +14,7 @@ xinput set-prop $touchpadId "libinput Tapping Enabled" 1
 xinput set-prop $touchpadId "libinput Natural Scrolling Enabled" 1
 
 # keyboard configuration
-setxkbmap -option "grp:alt_space_toggle,altwin:swap_alt_win,caps:escape"
+# map capslock as ctrl when pressed with other keys
+# map capslock as escape for single
+setxkbmap -option "grp:alt_space_toggle,altwin:swap_alt_win,caps:ctrl_modifier"
+xcape -e 'Caps_Lock=Escape'
