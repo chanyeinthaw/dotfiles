@@ -22,4 +22,4 @@ exec --no-startup-id /home/chan/.config/i3/scripts/setup.sh &
 exec --no-startup-id xss-lock --transfer-sleep-lock -- ~/.config/i3/scripts/lock.sh
 
 # nm-applet - desktop environment-independent system tray GUI 
-exec --no-startup-id nm-applet
+# exec --no-startup-id nm-applet

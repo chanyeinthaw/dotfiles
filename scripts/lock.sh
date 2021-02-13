@@ -2,7 +2,7 @@
 
 i3lock \
 --nofork \
---image=/home/$USER/.config/i3/background.png \
+--image=/home/$USER/.config/i3/lock.png \
 --clock \
 --timestr="%I:%M:%S" \
 --indicator \
