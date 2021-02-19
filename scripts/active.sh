@@ -1,6 +1,6 @@
 #!/bin/sh
 
-name=$(xdotool getactivewindow getwindowname 2>1)
+name=$(xdotool getactivewindow getwindowname 2>/tmp/active)
 
 if [ "$name" = "" ]; then
     echo $PINCH
