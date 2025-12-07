@@ -1,0 +1,9 @@
+.DS_Store
+.git
+.jj
+.gitignore
+.editorconfig
+
+scripts
+README.md
+Makefile
