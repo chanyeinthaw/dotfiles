@@ -1,2 +1,5 @@
 dot-zshrc.d/*.sh
 .DS_Store
+
+dot-aws/config
+dot-aws/credentials
