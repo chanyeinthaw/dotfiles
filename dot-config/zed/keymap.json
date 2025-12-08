@@ -1,0 +1,64 @@
+[
+  {
+    "bindings": {
+      "cmd-shift-enter": "zed::ToggleFullScreen",
+      "ctrl-q": "workspace::CloseWindow",
+      "ctrl-x w": "projects::OpenRecent",
+      "alt-+": "workspace::ToggleZoom",
+      "cmd-r": "workspace::ToggleRightDock",
+      "cmd-l": "workspace::ToggleLeftDock",
+      "cmd-j": "workspace::ToggleBottomDock",
+      "cmd-m": "workspace::CloseAllDocks",
+      "cmd-shift-j": "workspace::NewCenterTerminal"
+    }
+  },
+  {
+    "context": "menu",
+    "bindings": {
+      "ctrl-j": "editor::ContextMenuNext",
+      "ctrl-k": "editor::ContextMenuPrevious"
+    }
+  },
+  {
+    "context": "TabSwitcher",
+    "bindings": {
+      "j": "menu::SelectNext",
+      "k": "menu::SelectPrevious",
+      "ctrl-d": "tab_switcher::CloseSelectedItem"
+    }
+  },
+  {
+    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+    "bindings": {
+      "shift-k": "editor::Hover",
+      "space c a": "editor::ToggleCodeActions",
+      "space o": "tab_switcher::Toggle",
+      "space f": "editor::Format",
+      "space r n": "editor::Rename",
+      "space q": "diagnostics::Deploy",
+      "space s f": "file_finder::Toggle",
+      "space s g": "pane::DeploySearch",
+      "space s s": "project_symbols::Toggle",
+      "space s o": "outline_panel::ToggleFocus",
+      "space v": "editor::GoToDefinitionSplit",
+      "g r": "editor::FindAllReferences",
+      "-": "editor::Fold",
+      "+": "editor::UnfoldLines",
+      "ctrl-w v": "pane::SplitRight"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual && !VimWaiting && !menu",
+    "bindings": {
+      "shift-k": "editor::MoveLineUp",
+      "shift-j": "editor::MoveLineDown"
+    }
+  },
+  {
+    "context": "Editor && mode == full",
+    "use_key_equivalents": true,
+    "bindings": {
+      "shift-enter": "editor::ExpandExcerpts"
+    }
+  }
+]

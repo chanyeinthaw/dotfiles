@@ -1,0 +1,30 @@
+"$schema" = "https://jj-vcs.github.io/jj/latest/config-schema.json"
+
+aliases.l = ["log", "--limit", "5"]
+aliases.ll = ["log", "--limit", "10"]
+aliases.branches = ["log", "-r", "heads(all())"]
+
+# these are set in 01-program-configs.sh
+# [user]
+# name =
+# email =
+
+[ui]
+default-command = "st"
+editor = "nvim"
+
+[git]
+push-branch-prefix = "chan/auto-"
+sign-on-push = true
+
+[signing]
+behavior = "own"
+backend = "ssh"
+key = "~/.ssh/id_rsa.pub"
+
+[templates]
+git_push_bookmark = '"chan/auto-" ++ change_id.short()'
+
+[user]
+name = "Chan Nyein Thaw"
+email = "chanyeinthaw@gmail.com"

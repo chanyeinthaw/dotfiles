@@ -1,0 +1,116 @@
+{
+  "agent": {
+    "use_modifier_to_send": true,
+    "dock": "left"
+  },
+  "edit_predictions": {
+    "mode": "subtle",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null,
+      "enterprise_uri": null
+    },
+    "enabled_in_text_threads": false
+  },
+  "theme": "One Light",
+  "icon_theme": "Catppuccin Latte",
+  "ssh_connections": [
+    {
+      "host": "cnt-devenv",
+      "username": "chanyeinthaw",
+      "projects": [
+        {
+          "paths": ["/home/chanyeinthaw/code/coder"]
+        },
+        {
+          "paths": ["/home/chanyeinthaw/code/inabooth-v3"]
+        }
+      ]
+    },
+    {
+      "host": "pinns-macbook-pro",
+      "username": "pinn",
+      "projects": [
+        {
+          "paths": ["/Users/pinn/Desktop/OT/ojp-lms-fe"]
+        }
+      ]
+    }
+  ],
+  "chat_panel": {
+    "dock": "left"
+  },
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
+  "language_models": {
+    "openai": {}
+  },
+  "autosave": "on_focus_change",
+  "auto_update": true,
+  "relative_line_numbers": true,
+  "tab_bar": {
+    "show_nav_history_buttons": false
+  },
+  "tabs": {
+    "git_status": true
+  },
+  "base_keymap": "VSCode",
+  "buffer_font_family": "MesloLGL Nerd Font",
+  "buffer_font_size": 13,
+  "cursor_blink": false,
+  "terminal": {
+    "font_family": "MesloLGL Nerd Font",
+    "font_size": 13
+  },
+  "vim_mode": true,
+  "vim": {
+    "use_system_clipboard": "always"
+  },
+  "scrollbar": {
+    "show": "never"
+  },
+  "project_panel": {
+    "dock": "right",
+    "git_status": true,
+    "indent_size": 25,
+    "sticky_scroll": false
+  },
+  "outline_panel": {
+    "dock": "right"
+  },
+  "git": {
+    "git_gutter": "tracked_files"
+  },
+  "formatter": "auto",
+  "format_on_save": "on",
+  "private_files": [
+    "**/*.pem",
+    "**/*.key",
+    "**/*.cert",
+    "**/*.crt",
+    "**/secrets.yml"
+  ],
+  "remove_trailing_whitespace_on_save": false,
+  "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "preferences": {
+            "importModuleSpecifier": "non-relative"
+          }
+        }
+      }
+    },
+    "biome": {
+      "settings": {
+        "require_config_file": true
+      }
+    }
+  },
+  "languages": {
+    "TypeScript": {
+      "language_servers": ["vtsls"]
+    }
+  }
+}
