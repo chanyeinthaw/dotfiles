@@ -4,10 +4,9 @@ aliases.l = ["log", "--limit", "5"]
 aliases.ll = ["log", "--limit", "10"]
 aliases.branches = ["log", "-r", "heads(all())"]
 
-# these are set in 01-program-configs.sh
-# [user]
-# name =
-# email =
+[user]
+name = "Chan Nyein Thaw"
+email = "chanyeinthaw@gmail.com"
 
 [ui]
 default-command = "st"
@@ -24,7 +23,3 @@ key = "~/.ssh/id_rsa.pub"
 
 [templates]
 git_push_bookmark = '"chan/auto-" ++ change_id.short()'
-
-[user]
-name = "Chan Nyein Thaw"
-email = "chanyeinthaw@gmail.com"

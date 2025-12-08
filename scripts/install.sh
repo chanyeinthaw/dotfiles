@@ -6,7 +6,7 @@ if ! command -v stow >/dev/null 2>&1; then
     exit 1
 fi
 
-$CWD/scripts/decrypt.sh || { echo "Decrypt failed"; exit 1; }
+"$CWD/scripts/decrypt.sh" || { echo "Decrypt failed"; exit 1; }
 
 # install tpm if there's no ~/.tmux/plugins/tpm
 if [ ! -d ~/.tmux/plugins/tpm ]; then

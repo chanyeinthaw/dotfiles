@@ -33,7 +33,7 @@ if [[ -z "$CRP_PASSWORD" ]]; then
 fi
 
 encrypt_file() {
-  local FILE=$1
+  local FILE="$1"
   local OUTFILE="$FILE.enc"
 
   openssl enc -aes-256-cbc \
