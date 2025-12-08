@@ -3,7 +3,7 @@
 set -e
 
 usage() {
-  echo "Usage: $0 -t <enc|dec|upd> <path>"
+  echo "Usage: $0 -t <enc|dec> <path>"
   exit 1
 }
 
@@ -22,7 +22,7 @@ shift $((OPTIND - 1))
 
 TARGET="$1"
 
-if [[ "$TYPE" != "enc" && "$TYPE" != "dec" && "$TYPE" != "upd" ]]; then
+if [[ "$TYPE" != "enc" && "$TYPE" != "dec" ]]; then
   usage
 fi
 
@@ -63,24 +63,28 @@ process() {
       for f in "$TARGET"/*(.N); do
         [[ "$f" == *.enc ]] && continue
         encrypt_file "$f"
-				rm "$f"
       done
     elif [[ "$TYPE" == "dec" ]]; then
 			echo "decrypting $TARGET"
       for f in "$TARGET"/*.enc(.N); do
         decrypt_file "$f"
       done
-    else # upd
-			echo "updating $TARGET"
-      for f in "$TARGET"/*(.N); do
-        [[ "$f" == *.enc ]] && continue
-				encrypt_file "$f"
-				rm "$f"
-        decrypt_file "$f.enc"
-      done
+    fi
+	elif [[ -f "$TARGET" ]]; then
+    if [[ "$TYPE" == "enc" ]]; then
+			echo "encrypting $TARGET"
+			if [[ "$TARGET" == *.enc ]]; then
+				echo "error: $TARGET is already encrypted"
+				exit 0
+			fi
+
+      encrypt_file "$TARGET"
+    elif [[ "$TYPE" == "dec" ]]; then
+			echo "decrypting $TARGET"
+      decrypt_file "$TARGET"
     fi
   else
-    echo "error: $TARGET is not a directory"
+    echo "error: $TARGET not found"
     exit 1
   fi
 }
