@@ -3,3 +3,7 @@
 1. Install [stow](https://www.gnu.org/software/stow/) first.
 2. Clone this repo to `$HOME/.dotfiles`
 3. Run `make install` to install dotfiles
+
+# P10K
+
+Follow [installation guide](https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#installation) to install powerlevel10k zsh theme.

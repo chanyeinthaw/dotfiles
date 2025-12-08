@@ -1,3 +1,4 @@
+#!/usr/bin/env zsh
 # install tpm if there's no ~/.tmux/plugins/tpm
 
 if [ ! -d ~/.tmux/plugins/tpm ]; then
