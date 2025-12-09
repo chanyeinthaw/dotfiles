@@ -4,6 +4,7 @@
 .gitignore
 .editorconfig
 
+common
 scripts
 README.md
 Makefile

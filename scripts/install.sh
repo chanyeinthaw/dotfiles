@@ -16,5 +16,8 @@ else
 	echo "tpm already installed"
 fi
 
+# extract dot-skm
+tar -xzf "$CWD/common/dot-skm.tar.gz"
+
 echo "installing dotfiles"
 stow --dotfiles --adopt .

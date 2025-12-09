@@ -10,6 +10,7 @@ CRP_PASSWORD=$(readpwd)
 dirs=(
   dot-zshrc.d
   dot-aws
+	common
 )
 
 for dir in $dirs; do

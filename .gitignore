@@ -1,5 +1,12 @@
-dot-zshrc.d/*.sh
 .DS_Store
 
-dot-aws/config
-dot-aws/credentials
+dot-zshrc.d/*
+!dot-zshrc.d/*.enc
+
+dot-aws/*
+!dot-aws/*.enc
+
+common/*
+!common/*.enc
+
+dot-skm
