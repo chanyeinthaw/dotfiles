@@ -6,7 +6,11 @@ dot-zshrc.d/*
 dot-aws/*
 !dot-aws/*.enc
 
+dot-ssh/*
+!dot-ssh/*.enc
+
 common/*
 !common/*.enc
 
 dot-skm
+dot-sshed

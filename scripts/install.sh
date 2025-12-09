@@ -19,5 +19,7 @@ fi
 # extract dot-skm
 tar -xzf "$CWD/common/dot-skm.tar.gz"
 
+mv "$CWD/common/dot-sshed" "$CWD"
+
 echo "installing dotfiles"
 stow --dotfiles --adopt .
