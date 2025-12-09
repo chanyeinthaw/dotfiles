@@ -3,15 +3,13 @@
 ONLY=$1
 CWD=$(pwd)
 
-source "$CWD/scripts/passwordman.sh"
+source "$CWD/setup/passwordman.sh"
 try_readpwd
 CRP_PASSWORD=$(readpwd)
 
 dirs=(
   dot-zshrc.d
   dot-aws
-  dot-ssh
-	common
 )
 
 for dir in $dirs; do
@@ -19,5 +17,5 @@ for dir in $dirs; do
 		continue
 	fi
 
-  CRP_PASSWORD="$CRP_PASSWORD" "$CWD/scripts/crypto.sh" -t dec "$CWD/$dir"
+  CRP_PASSWORD="$CRP_PASSWORD" "$CWD/setup/crypto.sh" -t upd "$CWD/$dir"
 done

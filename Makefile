@@ -1,5 +1,5 @@
 STOW=stow
-SCRIPTS=./scripts/
+SCRIPTS=./setup/
 
 install:
 	@chmod +x $(SCRIPTS)*

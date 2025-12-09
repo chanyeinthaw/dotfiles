@@ -3,7 +3,7 @@
 ONLY=$1
 CWD=$(pwd)
 
-source "$CWD/scripts/passwordman.sh"
+source "$CWD/setup/passwordman.sh"
 try_readpwd
 CRP_PASSWORD=$(readpwd)
 
@@ -25,5 +25,5 @@ for dir in $dirs; do
 		cp dot-sshed "$CWD/common"
 	fi
 
-  CRP_PASSWORD="$CRP_PASSWORD" "$CWD/scripts/crypto.sh" -t enc "$CWD/$dir"
+  CRP_PASSWORD="$CRP_PASSWORD" "$CWD/setup/crypto.sh" -t enc "$CWD/$dir"
 done

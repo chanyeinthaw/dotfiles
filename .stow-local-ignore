@@ -5,7 +5,7 @@
 .editorconfig
 
 common
-scripts
+setup
 README.md
 Makefile
 
