@@ -14,3 +14,7 @@ common/*
 
 dot-skm
 dot-sshed
+
+dot-gnupg/*
+!dot-gnupg/gpg-agent.conf
+!dot-gnupg/gpg.conf
