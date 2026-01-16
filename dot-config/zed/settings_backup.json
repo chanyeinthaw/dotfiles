@@ -1,5 +1,4 @@
 {
-  "use_on_type_format": false,
   "agent": {
     "use_modifier_to_send": true,
     "dock": "left"
@@ -20,13 +19,7 @@
       "host": "100.86.63.41",
       "username": "chan",
       "args": [],
-      "projects": [
-        {
-          "paths": [
-            "/home/chan/code/inabooth-4"
-          ]
-        }
-      ]
+      "projects": []
     }
   ],
   "chat_panel": {
@@ -40,7 +33,7 @@
   },
   "autosave": "on_focus_change",
   "auto_update": true,
-  "relative_line_numbers": "enabled",
+  "relative_line_numbers": true,
   "tab_bar": {
     "show_nav_history_buttons": false
   },
@@ -102,9 +95,7 @@
   },
   "languages": {
     "TypeScript": {
-      "language_servers": [
-        "vtsls"
-      ]
+      "language_servers": ["vtsls"]
     }
   }
 }
